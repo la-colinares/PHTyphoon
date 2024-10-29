@@ -1,0 +1,122 @@
+[
+  {
+    "rank": 1,
+    "storm": "Yolanda (Haiyan)",
+    "image_name": "yolanda.webp",
+    "season": 2013,
+    "damage": {
+      "inPHP": "₱95.5 billion",
+      "inUSD": "$2.2 billion"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Haiyan",
+    "description": "Typhoon Yolanda, known internationally as Haiyan, made landfall in the Philippines on November 8, 2013, with sustained winds reaching up to 195 mph. This Category 5-equivalent storm struck the central Philippines, particularly devastating the city of Tacloban in Leyte province, where massive storm surges overwhelmed coastal areas. Entire towns were flattened, and critical infrastructure, including hospitals, roads, and communication lines, was destroyed. Over 6,300 lives were lost, and more than 1,000 people were declared missing. Yolanda displaced around 4.1 million people, leading to one of the largest humanitarian crises in Philippine history. The typhoon caused massive economic losses, amounting to $2.2 billion, as agriculture and fisheries were severely impacted. International aid poured in from various countries, highlighting global solidarity, but the response also underscored gaps in local disaster preparedness. Yolanda became a turning point for disaster risk management in the Philippines, leading to policy reforms and improved early warning systems. The storm remains one of the most powerful and destructive tropical cyclones on record."
+  },
+  {
+    "rank": 2,
+    "storm": "Odette (Rai)",
+    "image_name": "odette.webp",
+    "season": 2021,
+    "damage": {
+      "inPHP": "₱51.8 billion",
+      "inUSD": "$1.02 billion"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Rai",
+    "description": "Typhoon Odette, internationally known as Rai, struck the Philippines in December 2021 as a Category 5-equivalent storm. It primarily affected the Visayas and Mindanao regions, with provinces such as Cebu, Bohol, and Siargao bearing the brunt of its impact. Odette’s winds, reaching up to 160 mph, uprooted trees, destroyed buildings, and knocked out power across large areas. The storm affected nearly 10 million people, causing widespread displacement and infrastructure damage. In total, over 400 people lost their lives due to flooding, landslides, and collapsed structures. The damage to homes and agriculture amounted to over $1 billion, leaving many communities struggling to recover even months later. Odette highlighted the growing intensity of typhoons linked to climate change, with areas previously considered safe now frequently experiencing severe storms. Relief efforts faced logistical challenges due to blocked roads and destroyed communication networks. The storm underscored the need for climate resilience and better housing standards in the Philippines."
+  },
+  {
+    "rank": 3,
+    "storm": "Pablo (Bopha)",
+    "image_name": "pablo.webp",
+    "season": 2012,
+    "damage": {
+      "inPHP": "₱43.2 billion",
+      "inUSD": "$1.06 billion"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Bopha",
+    "description": "Typhoon Pablo, internationally known as Bopha, was an intense Category 5 storm that struck the southern Philippines in December 2012. With sustained winds of 175 mph, Pablo was one of the most powerful storms to ever hit Mindanao, an area that rarely experiences such strong typhoons. The storm caused widespread devastation, particularly in Compostela Valley and Davao Oriental, where entire communities were destroyed by flash floods and landslides. Pablo left over 1,900 people dead or missing and displaced hundreds of thousands. Agricultural losses, especially in the banana industry, amounted to significant economic losses. The storm destroyed homes, infrastructure, and livelihoods, pushing affected communities into poverty. International aid was mobilized, but the disaster highlighted the need for disaster preparedness in less-typhoon-prone areas like Mindanao. Pablo became a stark example of the changing patterns of tropical cyclones due to climate change. The typhoon underscored the necessity for adaptive measures even in historically safer regions."
+  },
+  {
+    "rank": 4,
+    "storm": "Glenda (Rammasun)",
+    "image_name": "glenda.webp",
+    "season": 2014,
+    "damage": {
+      "inPHP": "₱38.6 billion",
+      "inUSD": "$771 million"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Rammasun",
+    "description": "Typhoon Glenda, known internationally as Rammasun, made landfall in the Philippines in July 2014. This Category 4 storm brought severe winds reaching 150 mph and primarily affected Luzon, particularly the Bicol region and Metro Manila. Thousands of homes were damaged or destroyed, and power outages affected millions for days. The storm caused significant agricultural losses, with rice fields, fruit plantations, and fisheries heavily impacted. In total, over 100 people died, and hundreds of thousands were displaced due to flooding and wind damage. Glenda was noted for causing extensive damage in urban areas, highlighting vulnerabilities in Metro Manila's infrastructure. Roads were blocked by fallen trees, power poles, and debris, complicating rescue and relief operations. The economic losses were substantial, and recovery efforts took months. The typhoon emphasized the need for disaster-resilient infrastructure in highly populated regions. Glenda is remembered for its intense winds and the widespread disruption it caused to critical services and daily life."
+  },
+  {
+    "rank": 5,
+    "storm": "Ompong (Mangkhut)",
+    "image_name": "ompong.webp",
+    "season": 2018,
+    "damage": {
+      "inPHP": "₱33.9 billion",
+      "inUSD": "$627 million"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Mangkhut",
+    "description": "Typhoon Ompong, internationally known as Mangkhut, was a Category 5 typhoon that struck Northern Luzon in September 2018. With sustained winds of 170 mph, it caused extensive damage, especially in the Cagayan Valley and Cordillera regions. The storm triggered massive landslides, particularly in mining areas in Benguet, resulting in significant loss of life. Ompong displaced hundreds of thousands and inflicted substantial agricultural losses, particularly on rice and corn crops, which were at peak harvest season. In total, around 100 lives were lost due to landslides, flooding, and collapsed structures. The typhoon also damaged infrastructure, including schools, bridges, and roads, making access to remote areas challenging for weeks. Recovery efforts were hampered by continuous rains that followed the storm. Ompong’s impact highlighted the need for better disaster management and evacuation protocols, especially in mountainous regions prone to landslides. The storm is remembered for its force and the vulnerability it exposed in rural communities."
+  },
+  {
+    "rank": 6,
+    "storm": "Pepeng (Parma)",
+    "image_name": "pepeng.webp",
+    "season": 2009,
+    "damage": {
+      "inPHP": "₱27.3 billion",
+      "inUSD": "$581 million"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Parma",
+    "description": "Typhoon Pepeng, internationally known as Parma, affected the Philippines in October 2009. This slow-moving storm brought torrential rains that led to severe flooding, particularly in Northern Luzon. Pepeng’s prolonged presence, as it hovered over the region, exacerbated the damage caused by Typhoon Ondoy just days earlier. The continuous rain caused rivers to overflow, flooding towns and rice fields, resulting in significant agricultural and economic losses. Pepeng caused over 400 deaths and displaced thousands, particularly in low-lying areas. Many regions, including Pangasinan and Ilocos, were submerged under water for days, isolating communities. The storm highlighted deficiencies in flood control systems and disaster response. Government and non-government agencies undertook massive relief efforts to support affected communities. Pepeng’s impact led to calls for better water management systems and flood prevention measures."
+  },
+  {
+    "rank": 7,
+    "storm": "Ulysses (Vamco)",
+    "image_name": "ulysses.webp",
+    "season": 2020,
+    "damage": {
+      "inPHP": "₱20.2 billion",
+      "inUSD": "$418 million"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Vamco",
+    "description": "Typhoon Ulysses, internationally known as Vamco, struck the Philippines in November 2020, just days after Super Typhoon Rolly. It brought heavy rains and strong winds that caused widespread flooding in Luzon, particularly in Metro Manila and the Cagayan Valley. Thousands of homes were submerged, displacing over 500,000 people and causing significant infrastructure damage. The typhoon left many residents stranded on rooftops, requiring large-scale rescue operations. In total, around 100 lives were lost due to flooding and landslides. Ulysses compounded the difficulties of communities still recovering from Rolly, stretching disaster response resources thin. The storm highlighted the vulnerabilities of urban areas to flooding and the need for improved drainage systems. Ulysses underscored the challenges posed by climate change, with increased rainfall leading to devastating floods. The typhoon prompted discussions on better urban planning and disaster preparedness in vulnerable areas."
+  },
+  {
+    "rank": 8,
+    "storm": "Rolly (Goni)",
+    "image_name": "rolly.webp",
+    "season": 2020,
+    "damage": {
+      "inPHP": "₱16.9 billion",
+      "inUSD": "$347 million"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Goni",
+    "description": "Typhoon Rolly, known internationally as Goni, made landfall in the Philippines in November 2020, quickly becoming one of the strongest tropical cyclones of the year. With maximum sustained winds of 195 mph, Rolly primarily affected the Bicol region, causing widespread destruction, particularly in Albay and Catanduanes. The storm caused severe agricultural losses, devastating farms, fisheries, and livestock. Rolly claimed at least 25 lives and displaced thousands, with many communities facing long-term recovery challenges. The storm’s impact on infrastructure was significant, with power outages, damaged roads, and destroyed homes complicating relief efforts. Rolly highlighted the need for enhanced disaster preparedness in high-risk areas, particularly as climate change continues to intensify typhoons. The storm prompted discussions on improving building standards and community resilience to future disasters. Rolly’s legacy is one of destruction and the urgent call for comprehensive disaster risk reduction strategies."
+  },
+  {
+    "rank": 9,
+    "storm": "Nina (Nock-ten)",
+    "image_name": "nina.webp",
+    "season": 2016,
+    "damage": {
+      "inPHP": "₱16 billion",
+      "inUSD": "$329 million"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Nock-ten",
+    "description": "Typhoon Nina, known internationally as Nock-ten, hit the Philippines in December 2016. The storm made landfall in Catanduanes, bringing heavy rains and winds that impacted Luzon and the Visayas. Nina’s strength, reaching Category 3 levels, caused significant damage to infrastructure and agriculture, particularly in Bicol and Eastern Visayas. The storm led to power outages affecting millions and caused flooding that isolated communities. In total, around 50 lives were lost, with thousands displaced from their homes. The damage was estimated at approximately $329 million, primarily in agriculture and infrastructure. Nina highlighted the vulnerabilities of rural communities to severe storms, emphasizing the importance of effective early warning systems and disaster preparedness. Recovery efforts faced challenges due to the storm's timing during the holiday season, complicating logistics for aid distribution. The typhoon served as a reminder of the Philippines' vulnerability to typhoons and the need for continued investment in disaster risk reduction and management."
+  },
+  {
+    "rank": 10,
+    "storm": "Karding (Noru)",
+    "image_name": "karding.webp",
+    "season": 2022,
+    "damage": {
+      "inPHP": "₱13.9 billion",
+      "inUSD": "$249 million"
+    },
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Noru",
+    "description": "Typhoon Karding, internationally known as Noru, struck the Philippines in September 2022 as a powerful Category 4 storm. The typhoon made landfall in Luzon, causing heavy rains and winds that resulted in widespread flooding and destruction. Karding left over 30 people dead and caused significant agricultural damage, particularly to rice and corn crops. The storm led to the evacuation of thousands of families and left many without power and access to clean water. The damage from Karding was estimated at approximately $249 million, primarily affecting infrastructure, agriculture, and housing. The storm highlighted the increasing intensity of typhoons in the region, stressing the need for improved disaster preparedness and response mechanisms. Karding's aftermath revealed gaps in local response efforts and the importance of community resilience in facing natural disasters."
+  }
+]

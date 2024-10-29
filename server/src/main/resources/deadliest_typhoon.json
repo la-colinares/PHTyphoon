@@ -1,0 +1,92 @@
+[
+  {
+    "rank": 1,
+    "storm_name": "Yolanda (Haiyan)",
+    "image_name": "yolanda.webp",
+    "season": 2013,
+    "fatalities": "6,300",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Haiyan",
+    "description": "Typhoon Yolanda (Haiyan), one of the strongest tropical cyclones on record, hit the Philippines in November 2013, unleashing winds over 315 km/h (195 mph) and a storm surge up to 7 meters high. Tacloban City was obliterated, with entire neighborhoods flattened and thousands of lives lost. The typhoon caused massive disruptions, leaving over 14 million people affected, with 6,300 confirmed dead, thousands missing, and millions homeless. International aid poured in, though the scale of destruction posed significant logistical challenges. In the aftermath, efforts focused on rebuilding and reinforcing disaster resilience in vulnerable coastal regions, while the storm became a symbol of the urgent need for climate action."
+  },
+  {
+    "rank": 2,
+    "storm_name": "Uring (Thelma)",
+    "image_name": "uring.webp",
+    "season": 1991,
+    "fatalities": "5,101–8,000",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tropical_Storm_Thelma",
+    "description": "Tropical Storm Uring (Thelma) struck in 1991, primarily causing deadly flash floods in Ormoc, Leyte. Torrential rains swelled the river, flooding neighborhoods and trapping residents. Over 5,000 people perished, many due to the sudden rise in water levels that washed away homes and infrastructure. The tragedy revealed shortcomings in urban planning and flood control, prompting calls for better disaster management. Today, Uring stands as a reminder of the dangers posed by sudden, intense tropical storms, especially in vulnerable, low-lying areas."
+  },
+  {
+    "rank": 3,
+    "storm_name": "Pablo (Bopha)",
+    "image_name": "pablo.webp",
+    "season": 2012,
+    "fatalities": "1,901",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Bopha",
+    "description": "Typhoon Pablo, known internationally as Bopha, devastated the island of Mindanao in December 2012. With winds reaching 280 km/h, Pablo brought massive rainfall, causing landslides and flash floods. Compostela Valley and Davao Oriental bore the brunt, with entire communities wiped out. Thousands of people lost homes, and the storm killed over 1,900 residents. In the aftermath, relief and rebuilding efforts focused on improving infrastructure resilience. Pablo underscored the importance of storm preparedness, even in regions rarely affected by typhoons."
+  },
+  {
+    "rank": 4,
+    "storm_name": "\"Angela\"",
+    "image_name": "angela.webp",
+    "season": 1867,
+    "fatalities": "1,800",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1867_Manila_typhoon",
+    "description": "The 1867 typhoon, sometimes referred to as Angela, struck Manila with violent winds and torrential rains, leading to widespread destruction. This early recorded typhoon caused major flooding and loss of life, underscoring Manila's vulnerability. Homes were destroyed, trees uprooted, and many lives lost. Though historical records are limited, Angela is remembered for its intensity and impact on the city, influencing later efforts to understand and prepare for future storms. It remains one of the deadliest typhoons in Philippine history."
+  },
+  {
+    "rank": 5,
+    "storm_name": "Winnie",
+    "image_name": "winnie.webp",
+    "season": 2004,
+    "fatalities": "1,593",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tropical_Storm_Winnie",
+    "description": "Tropical Storm Winnie struck Luzon in November 2004, unleashing continuous rainfall that led to deadly flooding and landslides. Many areas experienced rapid river flooding, with waters inundating homes and trapping residents. More than 1,500 lives were lost, as some communities were unprepared for the sudden deluge. In the wake of the storm, efforts to improve evacuation planning and flood monitoring became a priority. Winnie's tragedy remains a stark reminder of the need for rapid response and improved infrastructure in flood-prone regions."
+  },
+  {
+    "rank": 6,
+    "storm_name": "\"October 1897\"",
+    "image_name": "oct_1897.webp",
+    "season": 1897,
+    "fatalities": "1,500",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1897_Luzon_typhoon",
+    "description": "The October 1897 typhoon, one of the earliest recorded major typhoons in Luzon, caused catastrophic flooding and left around 1,500 dead. Reports describe significant destruction of agricultural lands and widespread damage to settlements. Recovery was slow, as resources for relief were limited in the late 19th century. The storm’s impact had lasting consequences, influencing local practices and urban planning. This historical typhoon is remembered as a significant part of the Philippines' struggle with natural disasters."
+  },
+  {
+    "rank": 7,
+    "storm_name": "Nitang (Ike)",
+    "image_name": "nitang.webp",
+    "season": 1984,
+    "fatalities": "1,426",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Ike",
+    "description": "Typhoon Nitang, or Ike, hit the Philippines in 1984 with powerful winds and rainfall that ravaged the Visayas and parts of Mindanao. Surigao del Norte was particularly affected, with nearly all structures damaged. The storm caused extensive flooding, destroying homes and leaving thousands homeless. The destruction highlighted the need for better building codes and disaster preparedness. Nitang remains a key event in Philippine disaster history, leading to significant advancements in infrastructure resilience and emergency response planning."
+  },
+  {
+    "rank": 8,
+    "storm_name": "Reming (Durian)",
+    "image_name": "reming.webp",
+    "season": 2006,
+    "fatalities": "1,399",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Durian",
+    "description": "Typhoon Durian, locally known as Reming, struck in November 2006, causing deadly mudslides in Albay Province, particularly around Mayon Volcano. The mudflows buried entire communities, killing over 1,300 people. Rescue efforts were hindered by damaged infrastructure, making it challenging to reach survivors. Durian's impact led to new policies focusing on hazard mapping and evacuation protocols, particularly in areas susceptible to volcanic debris flow. Its legacy is a reminder of the interconnected risks of typhoons and volcanic hazards in the Philippines."
+  },
+  {
+    "rank": 9,
+    "storm_name": "Frank (Fengshen)",
+    "image_name": "frank.webp",
+    "season": 2008,
+    "fatalities": "1,371",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Fengshen_(2008)",
+    "description": "Typhoon Fengshen, known locally as Frank, struck in June 2008, primarily affecting the Western Visayas. Heavy rains and floods devastated communities, and a tragic ferry accident claimed many lives. The MV Princess of the Stars capsized, underscoring the importance of maritime safety during storms. Fengshen’s impact led to enhanced policies for maritime operation and greater emphasis on flood control infrastructure. The disaster remains a pivotal event in highlighting the complex risks posed by typhoons to both land and maritime safety."
+  },
+  {
+    "rank": 10,
+    "storm_name": "Sendong (Washi)",
+    "image_name": "sendong.webp",
+    "season": 2011,
+    "fatalities": "1,257",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tropical_Storm_Washi",
+    "description": "Tropical Storm Washi, or Sendong, caused devastating flash floods in December 2011 in Mindanao. The rivers overflowed in Cagayan de Oro and Iligan, inundating homes and sweeping away infrastructure. The storm took over 1,200 lives and left thousands homeless, highlighting the region's vulnerability to unexpected tropical storms. Sendong led to improvements in flood monitoring and evacuation protocols, especially in previously low-risk areas."
+  }
+]
