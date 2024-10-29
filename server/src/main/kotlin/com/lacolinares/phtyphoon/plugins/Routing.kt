@@ -6,6 +6,7 @@ import io.ktor.server.application.call
 import io.ktor.server.auth.authenticate
 import io.ktor.server.http.content.staticResources
 import io.ktor.server.response.respond
+import io.ktor.server.response.respondText
 import io.ktor.server.routing.get
 import io.ktor.server.routing.route
 import io.ktor.server.routing.routing
@@ -17,6 +18,10 @@ fun Application.configureRouting() {
     routing {
         authenticate {
             staticResources("/resources", "images")
+        }
+
+        get("/") {
+            call.respondText("Server is up!")
         }
 
         authenticate {
