@@ -22,6 +22,9 @@ ktor-api-key = "2.2.4"
 koin-ktor = "4.0.0"
 koin-logger-slf4j = "4.0.0"
 koin-bom = "4.0.0"
+navigation-compose = "2.8.0-alpha10"
+ksp = "2.0.20-1.0.25"
+kotlinx-erialization-json = "1.7.1"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -52,6 +55,8 @@ koin-di-logger-slf4j = { module = "io.insert-koin:koin-logger-slf4j", version.re
 koin-android = {  module = "io.insert-koin:koin-android", version.ref = "koin-bom"}
 koin-core = {  module = "io.insert-koin:koin-core", version.ref = "koin-bom"}
 koin-compose = {  module = "io.insert-koin:koin-compose", version.ref = "koin-bom"}
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-erialization-json" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -62,3 +67,4 @@ kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
