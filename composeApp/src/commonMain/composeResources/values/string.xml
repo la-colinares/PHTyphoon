@@ -3,4 +3,7 @@
     <string name="typhoon_in_the_philippines_description">The Philippines is a typhoon-prone country, with approximately 20 typhoons entering its area of responsibility per year. Locally known generally as bagyo, typhoons regularly form in the Philippine Sea and less regularly, in the South China Sea, with the months of June to September being the most active, August being the month with the most activity. Each year, at least ten typhoons are expected to hit the island nation, with five expected to be destructive and powerful. In 2013, Time declared the country as the "most exposed country in the world to tropical storms".</string>
     <string name="read_more_label">Read more</string>
     <string name="read_more_url">https://en.wikipedia.org/wiki/Typhoons_in_the_Philippines</string>
+
+    <string name="top_deadliest_typhoon">Top 10 Deadliest Philippine Typhoons</string>
+    <string name="top_destructive_typhoon">Top 10 Destructive Philippine Typhoons</string>
 </resources>

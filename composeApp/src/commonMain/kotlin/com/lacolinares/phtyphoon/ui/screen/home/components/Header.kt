@@ -34,6 +34,7 @@ import phtyphoon.composeapp.generated.resources.typhoon_in_the_philippines_title
 internal fun Header(){
     Column(
         modifier = Modifier
+            .wrapContentHeight()
             .fillMaxWidth()
             .padding(horizontal = 24.dp)
             .graphicsLayer {

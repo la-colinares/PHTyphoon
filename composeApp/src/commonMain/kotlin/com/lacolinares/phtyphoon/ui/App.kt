@@ -7,6 +7,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
+import coil3.ImageLoader
+import coil3.compose.setSingletonImageLoaderFactory
+import coil3.request.crossfade
 import com.lacolinares.phtyphoon.ui.navigation.NavGraph
 import com.lacolinares.phtyphoon.ui.theme.MontTypography
 import com.lacolinares.phtyphoon.ui.theme.VampireBlack
@@ -16,6 +19,12 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 @Preview
 fun App() {
     MaterialTheme(typography = MontTypography()) {
+        setSingletonImageLoaderFactory { context ->
+            ImageLoader.Builder(context)
+                .crossfade(true)
+                .build()
+        }
+
         val navController = rememberNavController()
 
         Box(modifier = Modifier.fillMaxSize().background(VampireBlack)) {

@@ -1,4 +1,5 @@
 
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -9,6 +10,22 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlinxSerialization)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.buildConfig)
+}
+
+buildConfig {
+    val baseUrl: String = gradleLocalProperties(
+        projectRootDir = rootDir,
+        providers = providers
+    ).getProperty("BASE_URL")
+
+    val xApiKey: String = gradleLocalProperties(
+        projectRootDir = rootDir,
+        providers = providers
+    ).getProperty("X_API_KEY")
+
+    buildConfigField("BASE_URL", baseUrl)
+    buildConfigField("X_API_KEY", xApiKey)
 }
 
 kotlin {
@@ -38,6 +55,8 @@ kotlin {
             implementation(libs.androidx.browser)
 
             implementation(libs.koin.android)
+            implementation(libs.ktor.client.android)
+            implementation(libs.ktor.client.okhttp)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -52,10 +71,26 @@ kotlin {
 
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
+            implementation(libs.koin.compose.viewmodel)
 
             //navigation
             implementation(libs.navigation.compose)
             implementation(libs.kotlinx.serialization.json)
+
+            //Ktor
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.client.logging)
+            implementation(libs.ktor.serialization.kotlinx.json)
+
+            //Coil3
+            implementation(libs.coil.compose.core)
+            implementation(libs.coil.mp)
+            implementation(libs.coil.network.ktor)
+            implementation(libs.coil.compose)
+        }
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
         }
     }
 }

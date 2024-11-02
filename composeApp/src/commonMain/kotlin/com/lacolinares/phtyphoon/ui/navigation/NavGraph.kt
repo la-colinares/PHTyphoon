@@ -14,11 +14,13 @@ fun NavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
         startDestination = Routes.HomeScreen
-    ){
+    ) {
         composable<Routes.HomeScreen> {
-            HomeScreen(onClickTyphoon = {
-                navController.navigate(Routes.DetailScreen("Test"))
-            })
+            HomeScreen(
+                onClickTyphoon = {
+                    navController.navigate(Routes.DetailScreen("Test"))
+                }
+            )
         }
 
         composable<Routes.DetailScreen> {
