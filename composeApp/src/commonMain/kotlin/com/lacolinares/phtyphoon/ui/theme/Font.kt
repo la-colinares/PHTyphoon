@@ -1,4 +1,4 @@
-package com.lacolinares.phtyphoon.theme
+package com.lacolinares.phtyphoon.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable

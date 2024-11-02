@@ -1,4 +1,4 @@
-package com.lacolinares.phtyphoon
+package com.lacolinares.phtyphoon.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -30,14 +30,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.lacolinares.phtyphoon.theme.HyperLinkColor
-import com.lacolinares.phtyphoon.theme.MontTypography
-import com.lacolinares.phtyphoon.theme.VampireBlack
-import com.lacolinares.phtyphoon.theme.White
-import com.lacolinares.phtyphoon.util.parallaxLayoutModifier
+import com.lacolinares.phtyphoon.shared.BrowserClient
+import com.lacolinares.phtyphoon.ui.theme.HyperLinkColor
+import com.lacolinares.phtyphoon.ui.theme.MontTypography
+import com.lacolinares.phtyphoon.ui.theme.VampireBlack
+import com.lacolinares.phtyphoon.ui.theme.White
+import com.lacolinares.phtyphoon.ui.util.parallaxLayoutModifier
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
+import org.koin.compose.koinInject
 import phtyphoon.composeapp.generated.resources.Res
 import phtyphoon.composeapp.generated.resources.img_main_typhoon_background
 import phtyphoon.composeapp.generated.resources.read_more_label
@@ -129,6 +131,8 @@ private fun Title() {
 
 @Composable
 private fun Description() {
+    val browserClient = koinInject<BrowserClient>()
+
     val description: String = stringResource(Res.string.typhoon_in_the_philippines_description)
     val readMoreLabel: String = stringResource(Res.string.read_more_label)
     val readMoreUrl: String = stringResource(Res.string.read_more_url)
@@ -156,8 +160,7 @@ private fun Description() {
             // Check if a link was clicked and get its annotation
             annotatedText.getStringAnnotations(tag = "URL", start = offset, end = offset)
                 .firstOrNull()?.let { annotation ->
-                    println("Clicked URL: ${annotation.item}")
-                    // Handle the link click, like opening a browser or navigating to a screen
+                    browserClient.openUrl(annotation.item)
                 }
         },
     )

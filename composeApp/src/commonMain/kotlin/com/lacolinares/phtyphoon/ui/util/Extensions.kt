@@ -1,4 +1,4 @@
-package com.lacolinares.phtyphoon.util
+package com.lacolinares.phtyphoon.ui.util
 
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.lazy.LazyListState
