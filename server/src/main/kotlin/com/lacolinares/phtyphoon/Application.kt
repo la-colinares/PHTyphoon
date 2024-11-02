@@ -24,7 +24,7 @@ fun main() {
             watchPaths = listOf("class")
 
             connector {
-                port = SERVER_PORT
+                port = 8080
                 host = "0.0.0.0"
             }
 
