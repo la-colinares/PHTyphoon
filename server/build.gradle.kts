@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.lacolinares.phtyphoon"
-version = "1.0.3"
+version = "1.0.4"
 application {
     mainClass.set("com.lacolinares.phtyphoon.ApplicationKt")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=true")
