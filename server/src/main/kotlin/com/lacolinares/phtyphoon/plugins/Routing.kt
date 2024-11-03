@@ -16,9 +16,7 @@ fun Application.configureRouting() {
     val service by inject<TyphoonService>()
 
     routing {
-        authenticate {
-            staticResources("/resources", "images")
-        }
+        staticResources("/resources", "images")
 
         get("/") {
             call.respondText("Server is up!")
