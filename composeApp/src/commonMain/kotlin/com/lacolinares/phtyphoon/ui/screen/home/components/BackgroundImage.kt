@@ -1,6 +1,5 @@
 package com.lacolinares.phtyphoon.ui.screen.home.components
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,12 +13,13 @@ import androidx.compose.ui.draw.drawWithCache
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
+import coil3.compose.AsyncImage
 import com.lacolinares.phtyphoon.ui.theme.VampireBlack
 import com.lacolinares.phtyphoon.ui.util.parallaxLayoutModifier
-import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.ExperimentalResourceApi
 import phtyphoon.composeapp.generated.resources.Res
-import phtyphoon.composeapp.generated.resources.img_main_typhoon_background
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 internal fun BackgroundImage(lazyListState: LazyListState) {
     Box(
@@ -28,8 +28,8 @@ internal fun BackgroundImage(lazyListState: LazyListState) {
             .fillMaxWidth()
             .parallaxLayoutModifier(lazyListState, 2)
     ) {
-        Image(
-            painter = painterResource(Res.drawable.img_main_typhoon_background),
+        AsyncImage(
+            model = Res.getUri("drawable/img_main_typhoon_background.webp"),
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier

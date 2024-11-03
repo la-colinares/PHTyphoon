@@ -4,15 +4,21 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-internal data class DeadliestTyphoonDTO(
+internal data class DestructiveTyphoonDTO(
     val rank: Int = -1,
-    @SerialName("storm_name")
+    @SerialName("storm")
     val stormName: String = "",
-    val season: Int = 0,
-    val fatalities: String = "",
     @SerialName("image_name")
     val imageName: String = "",
+    val season: Int = 0,
+    val damage: Damage = Damage(),
     @SerialName("wikipedia_url")
     val wikipediaUrl: String = "",
     val description: String = "",
-)
+){
+    @Serializable
+    data class Damage(
+        val inPHP: String = "",
+        val inUSD: String = ""
+    )
+}

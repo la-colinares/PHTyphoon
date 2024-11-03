@@ -17,7 +17,10 @@ fun NavGraph(navController: NavHostController) {
     ) {
         composable<Routes.HomeScreen> {
             HomeScreen(
-                onClickTyphoon = {
+                onClickDeadliestTyphoon = {
+                    navController.navigate(Routes.DetailScreen("Test"))
+                },
+                onClickDestructiveTyphoon = {
                     navController.navigate(Routes.DetailScreen("Test"))
                 }
             )

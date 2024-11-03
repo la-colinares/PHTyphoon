@@ -11,7 +11,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -32,15 +31,7 @@ import phtyphoon.composeapp.generated.resources.typhoon_in_the_philippines_title
 
 @Composable
 internal fun Header(){
-    Column(
-        modifier = Modifier
-            .wrapContentHeight()
-            .fillMaxWidth()
-            .padding(horizontal = 24.dp)
-            .graphicsLayer {
-                translationY = -400f
-            }
-    ) {
+    Column(modifier = Modifier.padding(horizontal = 24.dp)){
         Title()
         Spacer(Modifier.height(16.dp))
         Description()
@@ -54,7 +45,6 @@ private fun Title() {
         modifier = Modifier.wrapContentHeight().fillMaxWidth(),
         color = White,
         fontSize = MaterialTheme.typography.headlineLarge.fontSize,
-        fontWeight = FontWeight.Medium,
         lineHeight = 40.sp
     )
 }
@@ -81,13 +71,11 @@ private fun Description() {
         text = annotatedText,
         modifier = Modifier.wrapContentHeight().fillMaxWidth(),
         style = TextStyle(
-            fontSize = MaterialTheme.typography.bodyMedium.fontSize,
-            fontWeight = FontWeight.Medium,
+            fontSize = MaterialTheme.typography.labelMedium.fontSize,
             color = White,
             lineHeight = 20.sp
         ),
         onClick = { offset ->
-            // Check if a link was clicked and get its annotation
             annotatedText.getStringAnnotations(tag = "URL", start = offset, end = offset)
                 .firstOrNull()?.let { annotation ->
                     browserClient.openUrl(annotation.item)

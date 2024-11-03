@@ -1,6 +1,7 @@
 package com.lacolinares.phtyphoon.data.remote
 
 import com.lacolinares.phtyphoon.data.remote.model.DeadliestTyphoonDTO
+import com.lacolinares.phtyphoon.data.remote.model.DestructiveTyphoonDTO
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
@@ -13,11 +14,9 @@ internal class PHTyphoonService(private val httpClient: HttpClient) {
            .body<List<DeadliestTyphoonDTO>>()
     }
 
-    suspend fun getDestructiveTyphoons() {
-        //httpClient.get("deadliest")
-    }
-
-    suspend fun getImage(imageName: String, type: String): String {
-        return httpClient.get("resources/typhoon/$type/$imageName").body<String>()
+    suspend fun getDestructiveTyphoons(): List<DestructiveTyphoonDTO> {
+        return httpClient
+            .get("typhoon/destructive")
+            .body<List<DestructiveTyphoonDTO>>()
     }
 }
