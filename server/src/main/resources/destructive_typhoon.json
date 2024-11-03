@@ -97,26 +97,26 @@
   },
   {
     "rank": 9,
-    "storm": "Nina (Nock-ten)",
-    "image_name": "nina.webp",
-    "season": 2016,
+    "storm": "Paeng (Nalgae)",
+    "image_name": "paeng.webp",
+    "season": 2022,
     "damage": {
-      "inPHP": "₱16 billion",
-      "inUSD": "$329 million"
+      "inPHP": "₱17.6 billion",
+      "inUSD": "$321 million"
     },
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Nock-ten",
-    "description": "Typhoon Nina, known internationally as Nock-ten, hit the Philippines in December 2016. The storm made landfall in Catanduanes, bringing heavy rains and winds that impacted Luzon and the Visayas. Nina’s strength, reaching Category 3 levels, caused significant damage to infrastructure and agriculture, particularly in Bicol and Eastern Visayas. The storm led to power outages affecting millions and caused flooding that isolated communities. In total, around 50 lives were lost, with thousands displaced from their homes. The damage was estimated at approximately $329 million, primarily in agriculture and infrastructure. Nina highlighted the vulnerabilities of rural communities to severe storms, emphasizing the importance of effective early warning systems and disaster preparedness. Recovery efforts faced challenges due to the storm's timing during the holiday season, complicating logistics for aid distribution. The typhoon served as a reminder of the Philippines' vulnerability to typhoons and the need for continued investment in disaster risk reduction and management."
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tropical_Storm_Nalgae",
+    "description": "Tropical Storm Paeng, internationally known as Nalgae, struck the Philippines in October 2022. Although it was not a typhoon, its slow movement and massive rain bands led to extensive flooding and landslides across various regions, including Mindanao, the Visayas, and parts of Luzon. The storm affected over a million people, displacing thousands and destroying homes. Paeng’s impact was particularly severe in Maguindanao, where landslides buried communities, resulting in significant casualties. The economic losses reached $321 million, with damage to agriculture, infrastructure, and homes. Rescue and relief efforts were challenging due to the vast area affected, and the government declared a state of calamity to facilitate aid. Paeng highlighted the risks posed by prolonged heavy rains and underscored the importance of community-based disaster preparedness. It also raised awareness of climate-resilient infrastructure to reduce the impact of similar future storms."
   },
   {
     "rank": 10,
-    "storm": "Karding (Noru)",
-    "image_name": "karding.webp",
-    "season": 2022,
+    "storm": "Pedring (Nesat)",
+    "image_name": "pedring.webp",
+    "season": 2011,
     "damage": {
-      "inPHP": "₱13.9 billion",
-      "inUSD": "$249 million"
+      "inPHP": "₱15.6 billion",
+      "inUSD": "$356 million"
     },
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Noru",
-    "description": "Typhoon Karding, internationally known as Noru, struck the Philippines in September 2022 as a powerful Category 4 storm. The typhoon made landfall in Luzon, causing heavy rains and winds that resulted in widespread flooding and destruction. Karding left over 30 people dead and caused significant agricultural damage, particularly to rice and corn crops. The storm led to the evacuation of thousands of families and left many without power and access to clean water. The damage from Karding was estimated at approximately $249 million, primarily affecting infrastructure, agriculture, and housing. The storm highlighted the increasing intensity of typhoons in the region, stressing the need for improved disaster preparedness and response mechanisms. Karding's aftermath revealed gaps in local response efforts and the importance of community resilience in facing natural disasters."
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Nesat_(2011)",
+    "description": "Typhoon Pedring, internationally known as Nesat, struck the Philippines in September 2011, primarily affecting Luzon. With sustained winds of up to 120 mph, Pedring caused extensive flooding in Metro Manila, where the seawall along Manila Bay was breached, inundating nearby areas. The storm also affected agricultural regions, with rice fields and farmlands severely damaged. Pedring’s floods and strong winds led to over 80 deaths and displaced thousands. Power outages, blocked roads, and damaged infrastructure further complicated the situation, with economic losses estimated at $356 million. The storm’s impact underscored the need for improved flood defenses, especially in urban areas near coastal regions. The government and NGOs launched relief efforts to support affected families, and the storm prompted discussions on the necessity for resilient infrastructure to withstand future storms. Pedring remains a significant event in the history of Philippine typhoons, remembered for the extent of flooding it caused in the capital."
   }
 ]
