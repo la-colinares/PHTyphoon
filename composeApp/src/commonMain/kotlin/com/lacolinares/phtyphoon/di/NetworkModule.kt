@@ -2,7 +2,9 @@ package com.lacolinares.phtyphoon.di
 
 import PHTyphoon.composeApp.BuildConfig
 import com.lacolinares.phtyphoon.data.remote.PHTyphoonService
+import com.lacolinares.phtyphoon.data.remote.RemoteDataSource
 import io.ktor.client.HttpClient
+import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.client.plugins.defaultRequest
 import io.ktor.client.plugins.logging.LogLevel
@@ -30,6 +32,11 @@ internal object NetworkModule {
                         println("HTTP status: ${response.status.value}")
                     }
                 }
+                install(HttpTimeout) {
+                    requestTimeoutMillis = 60000L
+                    socketTimeoutMillis = 60000L
+                    connectTimeoutMillis = 60000L
+                }
                 defaultRequest {
                     url(BuildConfig.BASE_URL)
                     header("x-api-key", BuildConfig.X_API_KEY)
@@ -38,5 +45,6 @@ internal object NetworkModule {
         }
 
         single { PHTyphoonService(get()) }
+        single { RemoteDataSource(get()) }
     }
 }

@@ -1,7 +1,7 @@
 package com.lacolinares.phtyphoon.data.remote
 
-import com.lacolinares.phtyphoon.data.remote.model.DeadliestTyphoonDTO
-import com.lacolinares.phtyphoon.data.remote.model.DestructiveTyphoonDTO
+import com.lacolinares.phtyphoon.data.remote.dto.DeadliestTyphoonDTO
+import com.lacolinares.phtyphoon.data.remote.dto.DestructiveTyphoonDTO
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get

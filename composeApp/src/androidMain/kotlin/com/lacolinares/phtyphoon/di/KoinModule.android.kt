@@ -1,9 +1,12 @@
 package com.lacolinares.phtyphoon.di
 
+import com.lacolinares.phtyphoon.data.local.PHTyphoonDatabase
+import com.lacolinares.phtyphoon.db.getDatabaseBuilder
 import com.lacolinares.phtyphoon.shared.BrowserClient
 import org.koin.core.module.Module
 import org.koin.dsl.module
 
-actual val sharedModule: Module = module {
+actual val platformModule: Module = module {
     single { BrowserClient(get()) }
+    single<PHTyphoonDatabase> { getDatabaseBuilder(get()) }
 }

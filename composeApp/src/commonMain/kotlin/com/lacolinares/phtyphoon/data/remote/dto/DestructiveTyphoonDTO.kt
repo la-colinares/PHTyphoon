@@ -1,4 +1,4 @@
-package com.lacolinares.phtyphoon.data.remote.model
+package com.lacolinares.phtyphoon.data.remote.dto
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

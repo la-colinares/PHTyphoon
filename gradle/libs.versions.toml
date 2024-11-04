@@ -24,9 +24,11 @@ koin-logger-slf4j = "4.0.0"
 koin-bom = "4.0.0"
 navigation-compose = "2.8.0-alpha10"
 ksp = "2.0.20-1.0.25"
-kotlinx-erialization-json = "1.7.1"
+kotlinx-serialization-json = "1.7.1"
 build-config = "5.5.0"
 coil3 = "3.0.0-rc02"
+room = "2.7.0-alpha11"
+sqlite = "2.5.0-alpha11"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -65,11 +67,15 @@ koin-core = {  module = "io.insert-koin:koin-core", version.ref = "koin-bom"}
 koin-compose = {  module = "io.insert-koin:koin-compose", version.ref = "koin-bom"}
 koin-compose-viewmodel = {  module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin-bom"}
 navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-erialization-json" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
 coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil3" }
 coil-compose-core = { module = "io.coil-kt.coil3:coil-compose-core", version.ref = "coil3" }
-coil-network-ktor = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil3" }
+coil-network-ktor2 = { module = "io.coil-kt.coil3:coil-network-ktor2", version.ref = "coil3" }
 coil-mp = { module = "io.coil-kt.coil3:coil", version.ref = "coil3" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+sqlite-bundled = { module= "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -82,3 +88,4 @@ kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref =
 kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 buildConfig = { id = "com.github.gmazzo.buildconfig", version.ref = "build-config" }
+room = { id = "androidx.room", version.ref = "room" }

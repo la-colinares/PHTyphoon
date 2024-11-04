@@ -11,6 +11,11 @@ plugins {
     alias(libs.plugins.kotlinxSerialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.buildConfig)
+    alias(libs.plugins.room)
+}
+
+room {
+    schemaDirectory("$projectDir/schemas")
 }
 
 buildConfig {
@@ -46,6 +51,14 @@ kotlin {
         }
     }
 
+    targets.configureEach {
+        compilations.configureEach {
+            compileTaskProvider.get().compilerOptions {
+                freeCompilerArgs.add("-Xexpect-actual-classes")
+            }
+        }
+    }
+
     sourceSets {
 
         androidMain.dependencies {
@@ -69,11 +82,12 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
 
+            //Koin
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
 
-            //navigation
+            //Navigation
             implementation(libs.navigation.compose)
             implementation(libs.kotlinx.serialization.json)
 
@@ -86,8 +100,12 @@ kotlin {
             //Coil3
             implementation(libs.coil.compose.core)
             implementation(libs.coil.mp)
-            implementation(libs.coil.network.ktor)
             implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor2)
+
+            //Room Database
+            implementation(libs.room.runtime)
+            implementation(libs.sqlite.bundled)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
@@ -124,5 +142,7 @@ android {
 
 dependencies {
     debugImplementation(compose.uiTooling)
+    add("kspAndroid", libs.room.compiler)
+    add("kspIosX64", libs.room.compiler)
 }
 
