@@ -7,6 +7,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
 import com.lacolinares.phtyphoon.ui.screen.detail.DetailScreen
 import com.lacolinares.phtyphoon.ui.screen.home.HomeScreen
+import com.lacolinares.phtyphoon.ui.util.TyphoonType
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 
 
 @Composable
@@ -17,18 +20,23 @@ fun NavGraph(navController: NavHostController) {
     ) {
         composable<Routes.HomeScreen> {
             HomeScreen(
-                onClickDeadliestTyphoon = {
-                    navController.navigate(Routes.DetailScreen("Test"))
+                onClickDeadliestTyphoon = { typhoon ->
+                    val deadliestTyphoon: TyphoonType = TyphoonType.Deadliest(typhoon)
+                    val type: String = Json.encodeToString(deadliestTyphoon)
+                    navController.navigate(Routes.DetailScreen(type))
                 },
-                onClickDestructiveTyphoon = {
-                    navController.navigate(Routes.DetailScreen("Test"))
+                onClickDestructiveTyphoon = { typhoon ->
+                    val destructiveTyphoon: TyphoonType = TyphoonType.Destructive(typhoon)
+                    val type: String = Json.encodeToString(destructiveTyphoon)
+                    navController.navigate(Routes.DetailScreen(type))
                 }
             )
         }
 
         composable<Routes.DetailScreen> {
             val args = it.toRoute<Routes.DetailScreen>()
-            DetailScreen(args.data)
+            val type: TyphoonType = Json.decodeFromString(args.type)
+            DetailScreen(type)
         }
     }
 }

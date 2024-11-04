@@ -1,5 +1,6 @@
 package com.lacolinares.phtyphoon.ui.screen.home.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -38,7 +39,8 @@ import org.jetbrains.compose.resources.stringResource
 @Composable
 internal fun DeadliestTyphoonHorizontalList(
     title: StringResource,
-    typhoons: List<DeadliestTyphoon>
+    typhoons: List<DeadliestTyphoon>,
+    onClick: (DeadliestTyphoon) -> Unit
 ){
     Column(modifier = Modifier.wrapContentHeight().fillMaxWidth()) {
         Title(title)
@@ -51,7 +53,11 @@ internal fun DeadliestTyphoonHorizontalList(
             contentPadding = PaddingValues(horizontal = 24.dp)
         ) {
             items(typhoons, key = { it.stormName }) { typhoon ->
-                ImageContent(typhoon.imageUrl, typhoon.stormName)
+                ImageContent(
+                    imageUrl = typhoon.imageUrl,
+                    name = typhoon.stormName,
+                    onClick = { onClick.invoke(typhoon) }
+                )
             }
         }
     }
@@ -60,7 +66,8 @@ internal fun DeadliestTyphoonHorizontalList(
 @Composable
 internal fun DestructiveTyphoonHorizontalList(
     title: StringResource,
-    typhoons: List<DestructiveTyphoon>
+    typhoons: List<DestructiveTyphoon>,
+    onClick: (DestructiveTyphoon) -> Unit
 ){
     Column(modifier = Modifier.wrapContentHeight().fillMaxWidth()) {
         Title(title)
@@ -73,7 +80,11 @@ internal fun DestructiveTyphoonHorizontalList(
             contentPadding = PaddingValues(horizontal = 24.dp)
         ) {
             items(typhoons, key = { it.stormName }) { typhoon ->
-                ImageContent(typhoon.imageUrl, typhoon.stormName)
+                ImageContent(
+                    imageUrl = typhoon.imageUrl,
+                    name = typhoon.stormName,
+                    onClick = { onClick.invoke(typhoon) }
+                )
             }
         }
     }
@@ -83,8 +94,12 @@ internal fun DestructiveTyphoonHorizontalList(
 private fun ImageContent(
     imageUrl: String,
     name: String,
+    onClick: () -> Unit
 ){
-    Box(modifier = Modifier.wrapContentSize()) {
+    Box(modifier = Modifier
+        .wrapContentSize()
+        .clickable { onClick.invoke() }
+    ) {
         AsyncImage(
             model = imageUrl,
             contentDescription = name,

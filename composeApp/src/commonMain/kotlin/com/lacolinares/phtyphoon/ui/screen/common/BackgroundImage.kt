@@ -1,4 +1,4 @@
-package com.lacolinares.phtyphoon.ui.screen.home.components
+package com.lacolinares.phtyphoon.ui.screen.common
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -16,12 +16,12 @@ import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.lacolinares.phtyphoon.ui.theme.VampireBlack
 import com.lacolinares.phtyphoon.ui.util.parallaxLayoutModifier
-import org.jetbrains.compose.resources.ExperimentalResourceApi
-import phtyphoon.composeapp.generated.resources.Res
 
-@OptIn(ExperimentalResourceApi::class)
 @Composable
-internal fun BackgroundImage(lazyListState: LazyListState) {
+internal fun BackgroundImage(
+    lazyListState: LazyListState,
+    imageModel: String
+) {
     Box(
         modifier = Modifier
             .height(412.dp)
@@ -29,7 +29,7 @@ internal fun BackgroundImage(lazyListState: LazyListState) {
             .parallaxLayoutModifier(lazyListState, 2)
     ) {
         AsyncImage(
-            model = Res.getUri("drawable/img_main_typhoon_background.webp"),
+            model = imageModel,
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier

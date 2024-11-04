@@ -1,5 +1,8 @@
 package com.lacolinares.phtyphoon.domain.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 internal data class DeadliestTyphoon(
     val rank: Int = -1,
     val stormName: String = "",

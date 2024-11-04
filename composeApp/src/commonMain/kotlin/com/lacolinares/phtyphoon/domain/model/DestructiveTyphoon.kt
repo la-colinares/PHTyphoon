@@ -1,5 +1,8 @@
 package com.lacolinares.phtyphoon.domain.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 internal data class DestructiveTyphoon(
     val rank: Int = -1,
     val stormName: String = "",
@@ -9,6 +12,7 @@ internal data class DestructiveTyphoon(
     val wikipediaUrl: String = "",
     val description: String = "",
 ){
+    @Serializable
     data class Damage(
         val inPHP: String = "",
         val inUSD: String = ""

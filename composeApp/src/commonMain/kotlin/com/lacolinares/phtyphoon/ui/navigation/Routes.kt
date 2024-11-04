@@ -3,11 +3,14 @@ package com.lacolinares.phtyphoon.ui.navigation
 import kotlinx.serialization.Serializable
 
 @Serializable
-sealed class Routes {
+internal sealed class Routes {
 
     @Serializable
-    data object HomeScreen : Routes()
+    internal data object HomeScreen : Routes()
 
+    /**
+     * @property type is a [com.lacolinares.phtyphoon.ui.util.TyphoonType] encoded to json string as argument for Detail Screen
+     */
     @Serializable
-    data class DetailScreen(val data: String) : Routes()
+    internal data class DetailScreen(val type: String) : Routes()
 }
