@@ -1,9 +1,8 @@
 package com.lacolinares.phtyphoon.ui.screen.home
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.rememberLazyListState
@@ -16,9 +15,11 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.lacolinares.phtyphoon.domain.model.DeadliestTyphoon
 import com.lacolinares.phtyphoon.domain.model.DestructiveTyphoon
 import com.lacolinares.phtyphoon.ui.screen.common.BackgroundImage
-import com.lacolinares.phtyphoon.ui.screen.home.components.DeadliestTyphoonHorizontalList
-import com.lacolinares.phtyphoon.ui.screen.home.components.DestructiveTyphoonHorizontalList
-import com.lacolinares.phtyphoon.ui.screen.home.components.Header
+import com.lacolinares.phtyphoon.ui.screen.home.components.DeadliestTyphoonListHorizontal
+import com.lacolinares.phtyphoon.ui.screen.home.components.DescriptionSection
+import com.lacolinares.phtyphoon.ui.screen.home.components.DestructiveTyphoonListHorizontal
+import com.lacolinares.phtyphoon.ui.screen.home.components.TitleSection
+import com.lacolinares.phtyphoon.ui.util.VerticalSpace
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.koin.compose.viewmodel.koinViewModel
 import phtyphoon.composeapp.generated.resources.Res
@@ -52,10 +53,14 @@ internal fun HomeScreen(
                         translationY = -400f
                     }
             ) {
-                Header()
+                Column(modifier = Modifier.padding(horizontal = 24.dp)){
+                    TitleSection()
+                    VerticalSpace(16)
+                    DescriptionSection()
+                }
                 if (deadliestTyphoons.isNotEmpty()) {
-                    Spacer(modifier = Modifier.height(24.dp))
-                    DeadliestTyphoonHorizontalList(
+                    VerticalSpace(24)
+                    DeadliestTyphoonListHorizontal(
                         title = Res.string.top_deadliest_typhoon,
                         typhoons = deadliestTyphoons,
                         onClick = { typhoon -> onClickDeadliestTyphoon.invoke(typhoon) }
@@ -63,8 +68,8 @@ internal fun HomeScreen(
                 }
 
                 if (deadliestTyphoons.isNotEmpty()) {
-                    Spacer(modifier = Modifier.height(24.dp))
-                    DestructiveTyphoonHorizontalList(
+                    VerticalSpace(24)
+                    DestructiveTyphoonListHorizontal(
                         title = Res.string.top_destructive_typhoon,
                         typhoons = destructiveTyphoons,
                         onClick = { typhoon -> onClickDestructiveTyphoon.invoke(typhoon) }

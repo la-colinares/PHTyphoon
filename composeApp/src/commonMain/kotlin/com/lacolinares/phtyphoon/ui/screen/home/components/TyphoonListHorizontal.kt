@@ -33,11 +33,12 @@ import com.lacolinares.phtyphoon.domain.model.DeadliestTyphoon
 import com.lacolinares.phtyphoon.domain.model.DestructiveTyphoon
 import com.lacolinares.phtyphoon.ui.theme.VampireBlack
 import com.lacolinares.phtyphoon.ui.theme.White
+import com.lacolinares.phtyphoon.ui.util.VerticalSpace
 import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
 
 @Composable
-internal fun DeadliestTyphoonHorizontalList(
+internal fun DeadliestTyphoonListHorizontal(
     title: StringResource,
     typhoons: List<DeadliestTyphoon>,
     onClick: (DeadliestTyphoon) -> Unit
@@ -64,14 +65,14 @@ internal fun DeadliestTyphoonHorizontalList(
 }
 
 @Composable
-internal fun DestructiveTyphoonHorizontalList(
+internal fun DestructiveTyphoonListHorizontal(
     title: StringResource,
     typhoons: List<DestructiveTyphoon>,
     onClick: (DestructiveTyphoon) -> Unit
 ){
     Column(modifier = Modifier.wrapContentHeight().fillMaxWidth()) {
         Title(title)
-        Spacer(modifier = Modifier.height(8.dp))
+        VerticalSpace(8)
         val listState = rememberLazyListState()
         LazyRow(
             modifier = Modifier.fillMaxWidth(),
