@@ -5,9 +5,7 @@ package com.lacolinares.phtyphoon.ui.screen.detail
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRowScope
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
@@ -71,7 +69,7 @@ internal fun DetailScreen(type: TyphoonType) {
                             TyphoonSeason(season = data.season.toString())
                         },
                         damageInfoSection = {
-                            Spacer(modifier = Modifier.height(10.dp))
+                            VerticalSpace(10)
                             DamageInfoSection(inPHP = data.damage.inPHP, inUSD = data.damage.inUSD)
                         },
                         description = data.description,
