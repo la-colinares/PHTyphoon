@@ -68,8 +68,7 @@ kotlin {
             implementation(libs.androidx.browser)
 
             implementation(libs.koin.android)
-            implementation(libs.ktor.client.android)
-            implementation(libs.ktor.client.okhttp)
+            implementation(libs.bundles.ktor.android)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -82,30 +81,21 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
 
-            //Koin
-            implementation(libs.koin.core)
-            implementation(libs.koin.compose)
-            implementation(libs.koin.compose.viewmodel)
+            //Koin DI
+            implementation(libs.bundles.koin.common)
 
-            //Navigation
+            //Compose Navigation
             implementation(libs.navigation.compose)
             implementation(libs.kotlinx.serialization.json)
 
             //Ktor
-            implementation(libs.ktor.client.core)
-            implementation(libs.ktor.client.content.negotiation)
-            implementation(libs.ktor.client.logging)
-            implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.bundles.ktor.common)
 
             //Coil3
-            implementation(libs.coil.compose.core)
-            implementation(libs.coil.mp)
-            implementation(libs.coil.compose)
-            implementation(libs.coil.network.ktor2)
+            implementation(libs.bundles.coil3.common)
 
             //Room Database
-            implementation(libs.room.runtime)
-            implementation(libs.sqlite.bundled)
+            implementation(libs.bundles.room.common)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)

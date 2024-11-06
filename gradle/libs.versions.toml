@@ -76,7 +76,6 @@ room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 sqlite-bundled = { module= "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
 
-
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
@@ -89,3 +88,28 @@ kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 buildConfig = { id = "com.github.gmazzo.buildconfig", version.ref = "build-config" }
 room = { id = "androidx.room", version.ref = "room" }
+
+[bundles]
+ktor-server = [
+    "ktor-server-core",
+    "ktor-server-netty",
+    "ktor-server-auth",
+    "ktor-server-status-pages",
+    "ktor-serialization-kotlinx-json",
+    "ktor-server-content-negotiation"
+]
+ktor-common = [
+    "ktor-client-core",
+    "ktor-client-logging",
+    "ktor-serialization-kotlinx-json",
+    "ktor-client-content-negotiation"
+]
+ktor-android = ["ktor-client-android", "ktor-client-okhttp"]
+coil3-common = [
+    "coil-compose-core",
+    "coil-compose",
+    "coil-mp",
+    "coil-network-ktor2"
+]
+koin-common = ["koin-core", "koin-compose", "koin-compose-viewmodel"]
+room-common = ["room-runtime", "sqlite-bundled"]
